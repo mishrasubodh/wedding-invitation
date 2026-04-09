@@ -1,0 +1,381 @@
+   /* 📱 MOBILE FIRST DESIGN */
+
+      body {
+        margin: 0;
+        font-family: "Tiro Devanagari Hindi", serif;
+        background: linear-gradient(135deg, #6d0000, #8b0000, #4b0000);
+        color: #ffd700;
+        text-align: center;
+
+        max-width: 480px;
+        margin: auto;
+        overflow-x: hidden;
+      }
+
+      /* PAGE */
+      .page {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 8px;
+      }
+
+      /* CARD */
+      .card {
+        width: 100%;
+        padding: 18px 10px;
+        border-radius: 12px;
+
+        background:
+          url("https://www.transparenttextures.com/patterns/cream-paper.png"),
+          rgba(163, 0, 0, 0.95);
+
+        border: 2px solid gold;
+
+        box-shadow:
+          0 0 10px gold,
+          0 0 30px rgba(255, 215, 0, 0.7);
+      }
+
+      /* 🕉️ TEXT */
+      h1 {
+        font-size: 30px;
+      }
+      h2 {
+        font-size: 24px;
+      }
+      h3 {
+        font-size: 20px;
+      }
+
+      .names {
+        font-size: 28px;
+        margin: 10px 0;
+        color: white;
+      }
+
+      .section-title {
+        font-size: 28px;
+        margin: 10px 0;
+      }
+
+      p {
+        font-size: 18px;
+        margin: 5px 0;
+      }
+
+      /* 💍 RING */
+      .ring {
+        font-size: 40px;
+      }
+
+      /* 📅 EVENTS */
+      .event {
+        width: 100%;
+        margin: 10px 0;
+
+        background: linear-gradient(145deg, #7a0000, #a30000);
+        border: 2px solid gold;
+        border-radius: 12px;
+      }
+
+      .event-title {
+        font-size: 16px;
+        background: gold;
+        color: #8b0000;
+        padding: 4px 12px;
+        border-radius: 20px;
+        display: inline-block;
+        margin-bottom: 5px;
+      }
+
+      .event-date {
+        font-size: 20px;
+      }
+      .event-time {
+        font-size: 18px;
+      }
+
+      /* 📍 VENUE */
+      .venue {
+        font-size: 18px;
+        padding: 12px;
+        margin-top: 10px;
+
+        background: linear-gradient(145deg, #007a2b, #ff2222);
+        border-radius: 10px;
+        border: 1px solid gold;
+      }
+
+      /* 📍 MAP BUTTON */
+      .map-btn {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 18px;
+        position: relative;
+        z-index: 99999 !important; /* 🔥 सबसे ऊपर */
+        pointer-events: auto !important;
+        font-size: 16px;
+        background: gold;
+        color: #8b0000;
+        border-radius: 20px;
+        text-decoration: none;
+      }
+
+      /* ⏳ COUNTDOWN */
+      .countdown {
+        font-size: 22px;
+        padding: 12px;
+        margin-top: 10px;
+
+        background: #7a0000;
+        border-radius: 10px;
+        border: 1px solid gold;
+      }
+
+      /* 👶 CHILD */
+      .child {
+        font-size: 18px;
+        padding: 12px;
+        margin-top: 15px;
+
+        background: linear-gradient(145deg, #006d7a, #ff0200);
+        border-radius: 10px;
+        border: 1px solid gold;
+      }
+
+      /* 👣 FOOTER */
+      .footer-row {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .col {
+        width: 100%;
+        font-size: 16px;
+      }
+
+      /* 🔘 BUTTON */
+      /* 🔘 BASE BUTTON */
+      .music-btn {
+        font-size: 18px;
+        padding: 12px 20px;
+        border-radius: 25px;
+        border: none;
+        cursor: pointer;
+
+        transition: 0.3s;
+
+        background: linear-gradient(45deg, #444, #222);
+        color: white;
+
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
+
+      /* 🎵 PLAYING STATE */
+      .music-btn.playing {
+        background: linear-gradient(45deg, #00c853, #00e676);
+        color: #003300;
+
+        box-shadow:
+          0 0 10px #00e676,
+          0 0 20px rgba(0, 255, 100, 0.7);
+      }
+
+      /* 🔇 PAUSED STATE */
+      .music-btn.paused {
+        background: linear-gradient(45deg, #b71c1c, #ff1744);
+        color: white;
+
+        box-shadow:
+          0 0 10px #ff1744,
+          0 0 20px rgba(255, 0, 0, 0.6);
+      }
+
+      /* ✨ HOVER EFFECT */
+      .music-btn:hover {
+        transform: scale(1.08);
+        filter: brightness(1.2);
+      }
+
+      /* 🪔 GANESH */
+      .ganesh img {
+        width: 70px;
+        border-radius: 50%;
+        box-shadow: 0 0 10px gold;
+      }
+
+      /* 💌 ENVELOPE */
+      #envelope {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+
+        background: #8b0000;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        z-index: 9999;
+      }
+
+      #envelope .cover {
+        font-size: 80px;
+      }
+
+      #envelope .text {
+        font-size: 20px;
+        margin-top: 15px;
+      }
+
+      /* 🎥 BACKGROUND VIDEO FIX */
+      .video-bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; /* ❗ पीछे भेज दिया */
+        overflow: hidden;
+      }
+
+      #bgVideo {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* पूरा screen cover */
+        filter: brightness(40%);
+      }
+
+      .fly {
+        opacity: 0;
+        transform: translateY(100px) scale(0.8);
+        pointer-events: none;
+      }
+
+      /* जब active होगा तब animation */
+      .fly.show {
+        animation: flyIn 0.8s ease forwards;
+      }
+
+      @keyframes flyIn {
+        0% {
+          opacity: 0;
+          transform: translateY(120px) scale(0.7);
+        }
+
+        100% {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+        }
+      }
+
+      /* FLOWERS */
+
+      .flower {
+        position: fixed;
+        top: -20px;
+        font-size: 25px;
+        animation: fall linear infinite;
+        opacity: 0.8;
+      }
+
+      @keyframes fall {
+        to {
+          transform: translateY(110vh);
+        }
+      }
+      /* 🌸 ENVELOPE FULL SCREEN */
+      #envelope {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+
+        background: #8b0000;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        z-index: 9999;
+      }
+
+      /* BOX */
+      .envelope-box {
+        position: relative;
+        width: 260px;
+        height: 180px;
+        background: #a30000;
+        border: 3px solid gold;
+        border-radius: 12px;
+        overflow: hidden;
+      }
+
+      /* 🔺 FLAP (triangle) */
+      .flap {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #c40000;
+
+        clip-path: polygon(0 0, 50% 50%, 100% 0);
+
+        z-index: 1; /* 👈 पीछे */
+      }
+
+      /* 📜 LETTER */
+      .letter {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        background: #fff5e1;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        z-index: 2; /* 👈 ऊपर */
+      }
+
+      /* 💌 ICON */
+      .cover {
+        font-size: 36px;
+      }
+
+      /* 🔥 TEXT */
+      .text {
+        font-size: 18px;
+        font-weight: bold;
+        color: #8b0000;
+
+        text-align: center;
+        margin-top: 8px;
+
+        z-index: 3;
+      }
+
+      /* 👇 HINT */
+      .hint {
+        font-size: 14px;
+        margin-top: 5px;
+        color: #444;
+      }
+
+      /* ❌ REMOVE ANY TRANSFORM (problem cause) */
+      .letter,
+      .flap {
+        transform: none !important;
+      }
